@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <span>5 avril 2022</span>
+    </header>
+        <nav class="menu">
+            <a href="index.html" id="accueil">ACCUEIL</a>
+        </nav>
+        <main>
+            <h1>INSCRIPTION</h1>
+            <form>
+            <label for="last_name">Nom : <input type="text" id="last_name" autofocus></label><br><br>
+            <label for="first_name">Prénom : <input type="text" id="first_name"></label><br><br>
+            <label for="birth_date">Date de naissance : <input type="date" id="debut" name="date-debut" value="2022-04-04" min="2022-04-06" max="2022-12-31"></label><br><br>
+            <label for="classe">Classe : <input type="text" id="classe"></label><br><br>
+
+            <fieldset>
+                <legend>Genre</legend>
+                <label for="fille">Fille</label>
+                <input type="radio" id="fille" name="choix" value="fille" checked>
+                <label for="garçon">Garçon</label>
+                <input type="radio" id="garçon" name="choix" value="garçon">
+            </fieldset><br>
+
+            <fieldset>
+                <legend>COORDONNEES</legend>
+                    <fieldset>
+                        <legend>Adresse</legend>
+                        <label for="rue_name">Rue : <input type="text" id="rue_name"></label><br><br>
+                        <label for="code_postal">Code postal : <input type="text" id="code_postal"></label><br><br>
+                        <label for="ville">Ville : <input type="text" id="ville"></label>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Contact parents</legend>
+                        <label for="tel 1">Téléphone 1 : <input type="text" id="tel 1"></label><br><br>
+                        <label for="tel 2">Téléphone 2: <input type="text" id="tel 2"></label>
+                    </fieldset>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>REGIME & ALLERGIES</legend>
+                    <span>L'enfant doit-il être pris en charge le mercredi midi?</span><br>
+                        <label for="non">Non</label>
+                        <input type="radio" id="non" name="choix_1" value="non" checked>
+                        <label for="oui">Oui</label>
+                        <input type="radio" id="oui" name="choix_1" value="oui"><br><br>
+                    <span>L'enfant suit-il un régime alimentaire actuellement ?</span><br>
+                        <label for="non">Non</label>
+                        <input type="radio" id="non" name="choix_2" value="non" checked>
+                        <label for="oui">Oui</label>
+                        <input type="radio" id="oui" name="choix_2" value="oui">
+                        <span>Si oui, merci de préciser : </span><br>
+                            <textarea id="petit_texte" name="petit-texte" placeholder="Aliments interdits ou limités..."></textarea><br><br>
+                    <span>L'enfant présente t-il des allergies alimentaires ?</span><br>           
+                        <label for="non">Non</label>
+                        <input type="radio" id="non" name="choix_3" value="non" checked>
+                        <label for="oui">Oui</label>
+                        <input type="radio" id="oui" name="choix_3" value="oui"> 
+                        <details>
+                            <summary>Si oui, lesquelles?</summary>
+                        </details>  
+                            <select name="allergies" id="select_allergies">
+                                <option value="gluten">Gluten</option>
+                                <option value="lactose">Lactose</option>
+                                <option value="blé">Blé</option>
+                                <option value="arachide">Arachide</option>
+                                <option value="soja">Soja</option>
+                            </select><br><br>
+                    <span>Autres :</span><br>
+                    <textarea id="autres" name="autre_texte"></textarea><br>
+            </fieldset><br>
+               <input type="submit" id="btn_valider_inscription" value="Enregistrer">
+            </form>
+        </main>
+</body>
+</html>
