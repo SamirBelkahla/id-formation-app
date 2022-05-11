@@ -4,35 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/syle.css">
     <title>Inscription</title>
 </head>
 <body>
     <header>
     </header>
-        <main>
-            <h1>INSCRIPTION</h1>
-            <form>
-                <label for="last_name">Nom :<input type="text" autofocus></label>
-                <label for="first_name">Prénom :<input type="text"></label>
-                <label for="rue_name">Rue :<input type="text"></label>
-                <label for="code_postal">Code postal :<input type="text"></label>
-                <label for="ville">Ville : <input type="text"></label>
-                <label for="tel ">Téléphone : <input type="text"></label>
-                <label for="last_name">Nom de l'enfant :<input type="text"></label>
-                <label for="first_name">Prénom de l'enfant :<input type="text"></label>
-                <label for="birth_date">Date de naissance : <input type="date" name="date-debut" value="2022-04-04" min="2022-04-06" max="2022-12-31"></label>
-                <label for="classe">Classe : <input type="text"></label>  
-                <select name="allergies">
-                <option value="sans">Sans</option>
-                <option value="gluten">Gluten</option>
-                <option value="lactose">Lactose</option>
-                <option value="blé">Blé</option>
-                <option value="arachide">Arachide</option>
-                <option value="soja">Soja</option>
-                </select>
-                <label for="iban">IBAN : <input type="text"></label>
-                <input type="submit" id="btn_valider_inscription" value="S'inscrire">
-            </form>
-        </main>
+    <main>
+        <h1 class="titre-inscription">INSCRIPTION</h1>
+        <form>
+            <div class="coordonnees">
+                <div class="coordonnee1" >
+                    <label for="last_name">
+                        <input type="text" placeholder="Nom">
+                    </label>
+                    <label for="first_name">
+                        <input type="text" placeholder="Prenom">
+                    </label>
+                    <label for="rue_name">
+                        <input type="text" placeholder="Adresse">
+                    </label>
+                    <label for="code_postal">
+                        <input type="text" placeholder="Code Postal">
+                    </label>
+                    <label for="ville"> 
+                        <input type="text" placeholder="Ville">
+                    </label>
+                    <label for="tel "> 
+                        <input type="text" placeholder="téléphone">
+                    </label>
+                    <label for="last_name">
+                        <input type="text" placeholder="Nom de l'enfant">
+                    </label>
+                    <label for="first_name" >
+                        <input type="text" placeholder="Prénom de l'enfant">
+                    </label>
+                </div>
+                <div class="coordonnee2">
+                    <label for="birth_date">Date de naissance : <input type="date" name="date-debut" value="2022-04-04" min="2022-04-06" max="2022-12-31"></label> 
+                    <label>Allergies</label>
+                    <select name="allergies">
+                        <option value="sans">Sans</option>
+                        <option value="gluten">Gluten</option>
+                        <option value="lactose">Lactose</option>
+                        <option value="blé">Blé</option>
+                        <option value="arachide">Arachide</option>
+                        <option value="soja">Soja</option>
+                    </select>
+                    <label for="iban">
+                        <input type="text" placeholder="IBAN">
+                    </label>
+                    <input type="submit" id="btn_valider_inscription" value="S'inscrire">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
