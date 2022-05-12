@@ -18,6 +18,7 @@ input[type=checkbox] {
 }
 
 button {
+    cursor: pointer;
     border: none;
     border-radius: 20px;
     background: linear-gradient(#FBC31E, #FBA31E);
