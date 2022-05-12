@@ -2,8 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;    
 }
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Regular.ttf");
+}
+* {
+    font-family: Poppins;
+}
+img {
+    opacity: 0.12;
+    position: absolute;
+    width: 80%;
+    margin-top: 15rem;
+    }
 
 main {
     border: solid green 1px;
@@ -16,6 +29,7 @@ main {
 
 .titre-inscription {
     border: solid blue 1px;
+    background: linear-gradient(#fbc31e, #fba31e) ;
     margin: 5rem 0rem;
     padding-left: 5rem;
 }
@@ -29,12 +43,12 @@ main {
     border: solid 1px black;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
 }
 
 .coordonnee2 {
     border: solid violet 1px;
     display: flex;
     flex-direction: column;
-    width: 40%
+    width: 45%
 }
