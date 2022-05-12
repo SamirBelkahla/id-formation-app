@@ -1,9 +1,8 @@
 * {
-    font-family: "Poppins"; src: url('../font/Poppins-Regular.ttf');
+    /* border: 1px solid red */
 }
-
 .recherche {
-    width: 70%;
+    width: 300px;
     background-color: #F1F1F1;
     border: 1px solid #D4D4D4;
     border-radius: 40px;
@@ -20,9 +19,6 @@ input[type=checkbox] {
 
 button {
     border: none;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 20px;
     background: linear-gradient(#FBC31E, #FBA31E);
     padding: 10px 10px;
@@ -38,27 +34,25 @@ button:active {
 }
 
 table {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     border-collapse: separate;
     justify-content: space-between;
 }
 
 td {
-    padding: 10px 1.5rem;
-}
-
-.regime {
-    text-align: center;
+    padding: 1px 2rem;
 }
 
 .naissance {
-    display: none;
+    display: block;
 }
 
 .date {
-    display: none;
+    display: block;
 }
 
 .parent {
-    display: none;
+    display: block;
 } 
