@@ -1,0 +1,125 @@
+@media all and (max-width: 767px)
+{
+    /* paramètres global */
+    * 
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+    .icons
+    {
+        display: none;
+    }
+    header
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* logo id-formation */
+    .logo
+    {
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem;
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+    nav ul
+    {
+        list-style: none;
+        overflow: hidden;
+    }
+    nav li a
+    {
+        display: block;
+        padding: 1.25rem 1.25rem;
+        text-decoration: none;
+    }
+
+    /* menu */
+    .menu
+    {
+        max-height: 0;
+        transition: .5s ease-out;
+    }
+    /* menu icone */
+    .menu-icone 
+    {
+        cursor: pointer;
+        display: block;
+        padding: 3rem 1.25rem;
+        position: relative;
+        user-select: none;
+    }
+
+    /* Définit le span initial */
+    .menu-icone .nav-icone 
+    { 
+        background: #1d585e;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 1.375rem;
+    }
+    /* Définit les spans ajoutés */
+    .menu-icone .nav-icone:before,
+    .menu-icone .nav-icone:after 
+    {
+        background: #1d585e;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    /* Placer les span au-dessus et au-dessous du span initial */
+    .menu-icone .nav-icone:before 
+    {
+        top: -5px;
+    }
+    .menu-icone .nav-icone:after 
+    {
+        top: 5px;
+    }
+
+    /* menu bouton */
+    .menu-bouton 
+    {
+        display: none;
+    }
+    /* définit la taille du conteneur des liens*/
+    .menu-bouton:checked ~ .menu 
+    {
+        max-height: 15rem;
+    }
+    /* Fait disparaître le span initial*/
+    .menu-bouton:checked ~ .menu-icone .nav-icone 
+    {
+        background: transparent;
+    }
+    /* fait pivoter le span before de 45 degrès ver la gauche*/
+    .menu-bouton:checked ~ .menu-icone .nav-icone:before 
+    {
+        transform: rotate(-45deg);
+    }
+    /* fait pivoter le span after de 45 degrès ver la droite*/
+    .menu-bouton:checked ~ .menu-icone .nav-icone:after
+    {
+        transform: rotate(45deg);
+    }
+    /* Déplace les span pour les superposer */
+    .menu-bouton:checked ~ .menu-icone .nav-icone:before,
+    .menu-bouton:checked ~ .menu-icone .nav-icone:after 
+    {
+        top: 0;
+    }
+}
