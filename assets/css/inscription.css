@@ -29,7 +29,6 @@ main {
 
 .titre-inscription {
     border: solid blue 1px;
-    background: linear-gradient(#fbc31e, #fba31e) ;
     margin: 5rem 0rem;
     padding-left: 5rem;
 }
