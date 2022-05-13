@@ -20,14 +20,14 @@ body:before {
     position: absolute;
     left: 0;
     top: 0;
+    background-image: url("../img/cantine.png");
     width: 100%;
-    height: 100%;
+    height: 110%;
     z-index: 0;
     opacity: 0.2;
-    background-image: url("../img/cantine.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 main {
@@ -47,6 +47,7 @@ img {
     margin-left: 5rem;
     margin-top: 1rem;
 }
+
 .titre-inscription {
     margin: 1rem 5rem;
     width: 70%;
@@ -61,10 +62,11 @@ img {
 .coordonnees {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 5rem;
 }
 
 label {
-    padding: 1rem 5rem;
+    padding: 1rem 0rem;
 }
 
 input[type="text"] {
@@ -114,4 +116,96 @@ input[type="button"] {
 input[type="button"]:hover {
     background:linear-gradient(#195a5bb9);
     transition: .2s;
+}
+
+@media screen and (max-width:48rem) {
+
+    * {
+        box-sizing: border-box;
+        margin: auto;
+        padding: auto;
+        font-size: 18px;    
+    } 
+
+    body:before {
+        content: "";
+        left: 0;
+        top: 0;
+        background-image: url("../img/cantine.png");
+        width: 100%;
+        height: 130%;
+        z-index: 0;
+        opacity: 0.2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        z-index: 1;
+        width: 100%;
+        margin: 0rem;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .titre-inscription {
+        margin: 1rem 1rem;
+        width: 70%;
+        font-size: 30px;
+    }
+
+    .sous-titre {
+        border: #fba31e solid 1px;
+        margin-left: 1rem;
+        padding-left: 0rem;
+    }
+
+    .coordonnees {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .coordonnee1, .coordonnee2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .coordonnee1 label, .coordonnee2 label {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .coordonnee1 input[type="text"], .coordonnee2 input[type="text"] {
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    label {
+        padding: 0.5rem 0rem;
+    }
+
+    input[type="submit"] {
+        background: linear-gradient(#fbc31e, #fba31e) ;
+        border-radius: 1rem;
+        color: white;
+        border: none;
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    select {
+        width: 45%;
+        margin-left: 5.4rem;
+    }
 }
