@@ -11,14 +11,13 @@ main {
 h1 {
     display: flex;
     align-items: center;
-    padding-left: 40%;
+    padding-left: 20px;
     background: linear-gradient(#FBC31E, #FBA31E);
     color: white;
-    font-size: small;
     width  : 100%;
     height : 40px;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
 } 
 
 .recherche {
@@ -55,7 +54,7 @@ td {
     display: none;
 }
 
-.demande {
+.detail {
     cursor: pointer;
     border-radius: 20px;
     border: 1px solid #D4D4D4;
@@ -65,11 +64,11 @@ td {
     margin-bottom: 10px;
     font-size:x-small;
 }
-.demande:hover {
+.detail:hover {
     background-color: #F3F3F3;
     color: black;
 }
 
-.demande:active {
+.detail:active {
     box-shadow: inset -1px -1px 1px #D4D4D4;
 }
