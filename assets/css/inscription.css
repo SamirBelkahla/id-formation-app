@@ -22,7 +22,7 @@ body:before {
     top: 0;
     background-image: url("../img/cantine.png");
     width: 100%;
-    height: 110%;
+    height: 100%;
     z-index: 0;
     opacity: 0.2;
     background-position: center;
