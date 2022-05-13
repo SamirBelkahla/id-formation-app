@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/syle.css">
-
-    <title>Formulaire cantine</title>
+    <link rel="stylesheet" href="assets/css/accueil.css">
+    <title>Accueil</title>
 
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a href="inscription.html" id="lien_inscription">INSCRIPTION</a>
-            <a href="paiement.html" id="lien_paiement">PAIEMENT</a>
-            <img src="assets/img/logo.png" alt="logo"/>
-        </nav>
     </header>
     <main>
-        <div>
-            <h1>Cantine scolaire</h1>
-            <p>Le service de la cantine scolaire comprend l'accueil pour le repas et la prise en charge des enfants avant, pendant et après ce moment, sur la plage de 12h00 à 14h00. La cantine scolaire fonctionne les lundis, mardis, jeudis et vendredis.</p>
+        <div class="side_left">
+            <img src="assets/img/logo.png" alt="logo">
+            <h1 class="titre-accueil">Comment inscrire mon enfant ?</h1>
+            <p class="sous-titre-accueil">Gérez les demandes d'inscription et de désinscription grâce à notre nouvelle application !</p>
+            <form>
+                <div class="user_connexion">
+                    <label for="user_mail">
+                        <input type="text" name="user_mail" placeholder="Adresse E-mail">
+                    </label>
+                    <label for="passeword">
+                        <input type="text" placeholder="Mot de passe">
+                    </label>
+                    <label for="btn_mdp_oublie">
+                        <input type="button" id="btn_mdp_oublie" value="Mot de passe oublié?">
+                    </label>
+                </div>
+                <div class="identification">
+                    <label for="btn_identification">
+                        <input type="submit" id="btn_identification" value="S'inscrire">
+                    </label>
+                    <label for="btn_connexion">Vous avez déjà un compte ?
+                        <input type="button" id="btn_connexion" value="CONNEXION">
+                    </label>
+                </div>
+                <div class="btn_sign_in">
+                    <input type="button" id="btn_compte_google" value="SIGN IN WITH GOOGLE">
+                    <input type="button" id="btn_compte_fb" value="SIGN IN WITH FACEBOOK">
+                </div>
+            </form>
         </div>
-        <div>
-            <h2>Comment inscrire mon enfant ?</h2>
-            <p>Si vous souhaitez inscrire votre enfant pour la première fois, veuillez créer un compte sur ce site.</p>
-            <ul>Vous pourrez :
-                <li>Suivre votre demarche en cours.</li>
-                <li>Interrompre ou reprendre l'inscription à la cantine.</li>
-                <li>Suivre et régler votre facture.</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Comment ré-inscrire mon enfant ?</h2>
-            <p>si vous souhaitez inscrire votre enfant pour la première fois, veuillez créer un compte sur ce site.</p>
+        <div class="side_right">
+            <img src="assets/img/cantine.png" alt="img-side">
         </div>
     </main>
 </body>
