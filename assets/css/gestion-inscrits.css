@@ -1,0 +1,65 @@
+* {
+    font-family: "Poppins"; src: url('../font/Poppins-Regular.ttf');
+}
+
+.recherche {
+    width: 70%;
+    background-color: #F1F1F1;
+    border: 1px solid #D4D4D4;
+    border-radius: 40px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+input[type=checkbox] {
+    border-color: #D4D4D4;
+    height: 15px;
+    width: 15px;
+    margin-right: 15px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#FBC31E, #FBA31E);
+    padding: 10px 10px;
+    color: white;
+}
+button:hover {
+    background: linear-gradient(#FBC31E, #FBA31E);
+    color: white;
+}
+
+button:active {
+    box-shadow: inset -3px -3px 3px #FBC31E;
+}
+
+table {
+    display: flex;
+    border-collapse: separate;
+    justify-content: space-between;
+}
+
+td {
+    padding: 10px 1.5rem;
+}
+
+.regime {
+    text-align: center;
+}
+
+.naissance {
+    display: none;
+}
+
+.date {
+    display: none;
+}
+
+.parent {
+    display: none;
+} 

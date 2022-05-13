@@ -12,6 +12,10 @@
     {
         display: none;
     }
+    .fa-solid {
+        color: grey;
+    }
+
     .admin, .parents
     {
         display: flex;
