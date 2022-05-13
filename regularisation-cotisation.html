@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='assets/js/regularisation-cotisation.js' async></script>
     <link rel="stylesheet" href="assets/css/regularisation-cotisation.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="assets/css/regularisation-cotisation-mobile.css">
     <title>Régularisation cotisation</title>
 </head>
 <body>
-    <header>    
+    <header class="header">    
     </header>
     <main>
-        <h1>Paiement de la cotisation</h1>
-        <div class="paiement-cotisation">Le paiement peut se faire par chèque ou en espèce par courrier ou sur place.
-            <section>
-   
+        <section class="paiement">
+            <h1>Paiement de la cotisation</h1>
+            <p>La régularisation des arriérés peut se faire par chèque, en espèces sur place (du Lundi au Vendredi de 08h30 à 11h30 et de 13h30 à 16h30) ou par carte bancaire.</p>
+        </section>    
+            <section class="case">
+                
                     <legend>Effectuer le paiement</legend>
                     <input type="radio" id="cheque" name="choix" value="cheque" checked>
                     <label for="cheque">Chèque</label>
@@ -27,10 +31,14 @@
 
                     <input type="radio" id="carte" name="choix" value="espece">
                     <label for="carte">Carte</label>
-             
+            <input type="submit" value="Payer">        
             </section>
-            <input type="submit" value="Payer">
+            
         </form>
+            <section class="paiementretard">
+                <h2>Paiements en retard</h2>
+                <div class="retard"></div>
+            </section>
     </main>
     <footer>
     </footer>
