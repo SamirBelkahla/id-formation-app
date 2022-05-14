@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/inscription.css">
+    <script src="assets/js/inscription.js"></script>
     <title>Inscription</title>
 </head>
 <body>
     <header>
     </header>
     <main>
-        <img src="/assets/img/logo.png" alt="logo">
+        <img src="assets/img/logo.png" alt="logo" onclick="accueil()">
         <h1 class="titre-inscription">Inscription</h1>
         <span class="sous-titre">Tout gérer depuis notre application</span>
         <form>
@@ -26,11 +27,8 @@
                     <label for="rue_name">
                         <input type="text" placeholder="Adresse">
                     </label>
-                    <label for="code_postal">
-                        <input type="text" placeholder="Code Postal">
-                    </label>
-                    <label for="ville"> 
-                        <input type="text" placeholder="Ville">
+                    <label for="mail">
+                        <input type="text" placeholder="Mail">
                     </label>
                     <label for="tel "> 
                         <input type="text" placeholder="Téléphone">
@@ -49,22 +47,27 @@
                     <label for="birth_date">Date de naissance : 
                         <input type="date" name="date-debut" value="" min="2022-04-06" max="2022-12-31">
                     </label>
-                    <label for="allergies">Allergies :
-                        <select name="allergies">
-                            <option value="sans">Sans</option>
-                            <option value="gluten">Gluten</option>
-                            <option value="lactose">Lactose</option>
-                            <option value="blé">Blé</option>
-                            <option value="arachide">Arachide</option>
-                            <option value="soja">Soja</option>
-                        </select>
+                    <label for="allergies">
+                        <input type="text" placeholder="Allergies">
                     </label>
-                    <label for="btn_inscription">
-                        <input type="submit" id="btn_inscription" value="S'inscrire">
+                    <label for="regime">
+                        <input type="text" placeholder="Régime de cantine souhaité">
                     </label>
-                    <label for="btn_connexion">Vous avez déjà un compte ?
-                        <input type="button" id="btn_connexion" value="CONNEXION">
                     </label>
+                </div>
+                <div class="buttons">
+                    <div class="btns_co">
+                        <label for="btn_inscription">
+                            <input type="submit" id="btn_inscription" value="S'inscrire">
+                        </label>
+                        <label for="btn_connexion">Vous avez déjà un compte ?
+                            <input type="button" id="btn_connexion" value="CONNEXION">
+                        </label>
+                    </div>
+                    <div class="btn_sign_in">
+                        <input type="button" id="btn_compte_google" value="SIGN IN WITH GOOGLE">
+                        <input type="button" id="btn_compte_fb" value="SIGN IN WITH FACEBOOK">
+                    </div>
                 </div>
             </div>
         </form>
