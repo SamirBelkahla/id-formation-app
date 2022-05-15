@@ -28,7 +28,7 @@ body:before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border-radius: 5rem;
+    border-radius: 2rem;
 }
 
 main {
@@ -38,8 +38,8 @@ main {
 }
 
 .side_left {
-    border: #195a5b solid 5px;
     width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,17 +50,18 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    margin: 1.5rem;
+    margin: 3rem;
 }
 
 .titre-accueil {
-    margin: 2rem;
+    margin: 3rem;
     width: 90%;
     font-size: 30px;
 }
 
 .sous-titre-accueil {
     margin-left: 1.5rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 15px;
     width: 90%;
@@ -107,9 +108,9 @@ input[type="submit"] {
     border-radius: 1rem;
     color: white;
     border: none;
-    margin: 2rem 0rem;
-    width: 80%;
-    height: 2.5rem;
+    margin: 3rem 0rem;
+    width: 50%;
+    height: 2rem;
     cursor: pointer;
 }
 
@@ -119,9 +120,13 @@ input[type="submit"]:hover {
 }
 
 .identification input[type="button"] {
-    color: #195a5b;
-    background-color: none;
+    color: white;
+    background-color: #195a5b;
     border: none;
+    border-radius: 1rem;
+    width: 8rem;
+    height: 2rem;
+    margin-top: 0.5rem;
     cursor: pointer;
     margin-bottom: 1rem;
 }
@@ -138,7 +143,8 @@ input[type="submit"]:hover {
     width: 15rem;
     height: 2.5rem;
     padding-left: 1rem;
-    margin: 2rem 1rem;
+    margin: 5rem 1rem;
+    margin-bottom: 15rem;
     cursor: pointer;
 }
 
@@ -163,4 +169,125 @@ input[type="submit"]:hover {
     background-color: black;
     background-repeat: no-repeat;
     background-position: 12px 11px;
+}
+
+@media screen and (max-width:48rem) {
+
+    * {
+        box-sizing: border-box;
+        margin: auto;
+        padding: auto;
+        font-size: 18px;    
+    } 
+
+    body:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url("../img/cantine.png");
+        width: 100%;
+        align-content: center;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.3;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: #f8f9fb;
+    }
+
+    .side_left{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .titre-accueil {
+        width: 100%;
+        margin: -1rem;
+    }
+
+    .sous-titre-accueil {
+        width: 80%;
+        margin: 3rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+
+    .user_connexion {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .user_connexion label {
+        padding: 0.5rem;
+        width: 90%;
+    }
+
+    .user_connexion input[type="button"] {
+        color: #195a5b;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 13rem;
+    }
+
+    .identification {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    input[type="submit"] {
+        background: linear-gradient(#fbc31e, #fba31e) ;
+        border-radius: 1rem;
+        color: white;
+        border: none;
+        margin: 3rem 0rem;
+        width: 10rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background:linear-gradient(#fbc41eb9, #fba31eb9);
+        transition: .2s;
+    }
+
+    .btn_sign_in {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .btn_sign_in input {
+        background-color: black;
+        color: white;
+        border-radius: 1rem;
+        width: 80%;
+        height: 2rem;
+        padding-left: 1rem;
+        cursor: pointer;
+    }
+
+    #btn_compte_google {
+        padding: 4px 42px;
+        border: none;
+        background-image: url(/assets/img/google.png);
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: 12px 6px;
+        margin-bottom: 1rem;
+    }
+    
+    #btn_compte_fb {
+        padding: 4px 42px;
+        border: none;
+        background-image: url(/assets/img/facebook.png);
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: 12px 6px;
+        margin: 0rem;
+    }
 }
