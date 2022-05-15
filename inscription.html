@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/inscription.css">
-    <script src="assets/js/inscription.js"></script>
     <title>Inscription</title>
 </head>
 <body>
@@ -15,43 +14,43 @@
         <img src="assets/img/logo.png" alt="logo" onclick="accueil()">
         <h1 class="titre-inscription">Inscription</h1>
         <span class="sous-titre">Tout gérer depuis notre application !</span>
-        <form>
+        <form id="form-inscription">
             <div class="coordonnees">
                 <div class="coordonnee1" >
                     <label for="last_name">
-                        <input type="text" name="nom_contact" placeholder="Nom">
+                        <input type="text" name="nom" placeholder="Nom">
                     </label>
                     <label for="first_name">
-                        <input type="text" placeholder="Prenom">
+                        <input type="text" name="prenom" placeholder="Prenom">
                     </label>
                     <label for="rue_name">
-                        <input type="text" placeholder="Adresse">
+                        <input type="text" name="adresse" placeholder="Adresse">
                     </label>
                     <label for="mail">
-                        <input type="text" placeholder="Mail">
+                        <input type="text" name="mail" placeholder="Mail">
                     </label>
                     <label for="tel "> 
-                        <input type="text" placeholder="Téléphone">
+                        <input type="text" name="telephone" placeholder="Téléphone">
                     </label>
                     <label for="iban">
-                        <input type="text" placeholder="IBAN">
+                        <input type="text" name="ribIban" placeholder="IBAN">
                     </label>
                 </div>
                 <div class="coordonnee2">
                     <label for="last_name">
-                        <input type="text" placeholder="Nom de l'enfant">
+                        <input type="text" name="nom-enfant" placeholder="Nom de l'enfant">
                     </label>
                     <label for="first_name" >
-                        <input type="text" placeholder="Prénom de l'enfant">
+                        <input type="text" name="enfant" placeholder="Prénom de l'enfant">
                     </label>
                     <label for="birth_date">Date de naissance : 
-                        <input type="date" name="date-debut" value="" min="2022-04-06" max="2022-12-31">
+                        <input type="date" name="dateNaissance" value="" min="2022-04-06" max="2022-12-31">
                     </label>
                     <label for="allergies">
-                        <input type="text" placeholder="Allergies">
+                        <input type="text" name="allergies" placeholder="Allergies">
                     </label>
                     <label for="regime">
-                        <input type="text" placeholder="Régime de cantine souhaité">
+                        <input type="text" name="regime" placeholder="Régime de cantine souhaité">
                     </label>
                     </label>
                 </div>
@@ -74,5 +73,6 @@
     </main>
     <footer>
     </footer>
+    <script src="assets/js/inscription.js"></script>
 </body>
 </html>
