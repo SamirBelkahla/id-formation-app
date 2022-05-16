@@ -1,0 +1,60 @@
+
+body {
+    background-color: white;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    display: none;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+.case {
+    padding: 10px 1rem;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    border-radius: 10px;
+    background: linear-gradient(#547C7C, #195A5B);
+    padding: 5px 10px;
+    color: white;
+}
+
+.paiementretard {
+    width: 90%;
+    margin-top: 20px;
+}
+
+h2 {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    background: linear-gradient(#547C7C, #195A5B);
+    border-radius: 5px;
+}
+
+.retard {
+    border-collapse: separate;
+    padding: 10px 10px;
+    width: 90%;
+    }
