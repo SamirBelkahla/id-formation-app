@@ -11,54 +11,52 @@
     <header>
     </header>
     <main>
-        <img src="/assets/img/logo.png" alt="logo">
+        <img src="assets/img/logo.png" alt="logo" onclick="accueil()">
         <h1 class="titre-inscription">Inscription</h1>
-        <span class="sous-titre">Tout gérer depuis notre application</span>
-        <form>
+        <span class="sous-titre">Tout gérer depuis notre application !</span>
+        <form id="form-inscription">
             <div class="coordonnees">
                 <div class="coordonnee1" >
                     <label for="last_name">
-                        <input type="text" name="nom_contact" placeholder="Nom">
+                        <input type="text" name="nom" placeholder="Nom">
                     </label>
                     <label for="first_name">
-                        <input type="text" placeholder="Prenom">
+                        <input type="text" name="prenom" placeholder="Prenom">
                     </label>
                     <label for="rue_name">
-                        <input type="text" placeholder="Adresse">
+                        <input type="text" name="adresse" placeholder="Adresse">
                     </label>
-                    <label for="code_postal">
-                        <input type="text" placeholder="Code Postal">
-                    </label>
-                    <label for="ville"> 
-                        <input type="text" placeholder="Ville">
+                    <label for="mail">
+                        <input type="text" name="mail" placeholder="Mail">
                     </label>
                     <label for="tel "> 
-                        <input type="text" placeholder="Téléphone">
+                        <input type="text" name="telephone" placeholder="Téléphone">
                     </label>
                     <label for="iban">
-                        <input type="text" placeholder="IBAN">
+                        <input type="text" name="ribIban" placeholder="IBAN">
                     </label>
                 </div>
                 <div class="coordonnee2">
                     <label for="last_name">
-                        <input type="text" placeholder="Nom de l'enfant">
+                        <input type="text" name="nom-enfant" placeholder="Nom de l'enfant">
                     </label>
                     <label for="first_name" >
-                        <input type="text" placeholder="Prénom de l'enfant">
+                        <input type="text" name="enfant" placeholder="Prénom de l'enfant">
                     </label>
                     <label for="birth_date">Date de naissance : 
-                        <input type="date" name="date-debut" value="" min="2022-04-06" max="2022-12-31">
+                        <input type="date" name="dateNaissance" value="" min="2022-04-06" max="2022-12-31">
                     </label>
-                    <label for="allergies">Allergies :
-                        <select name="allergies">
-                            <option value="sans">Sans</option>
-                            <option value="gluten">Gluten</option>
-                            <option value="lactose">Lactose</option>
-                            <option value="blé">Blé</option>
-                            <option value="arachide">Arachide</option>
-                            <option value="soja">Soja</option>
-                        </select>
+                    <label for="allergies">
+                        <input type="text" name="allergies" placeholder="Allergies">
                     </label>
+                    <label for="regime">
+                        <input type="text" name="regime" placeholder="Régime de cantine souhaité">
+                    </label>
+                    </label>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="btns_co">
                     <label for="btn_inscription">
                         <input type="submit" id="btn_inscription" value="S'inscrire">
                     </label>
@@ -66,10 +64,15 @@
                         <input type="button" id="btn_connexion" value="CONNEXION">
                     </label>
                 </div>
+                <div class="btn_sign_in">
+                    <input type="button" id="btn_compte_google" value="SIGN IN WITH GOOGLE" onclick="google()">
+                    <input type="button" id="btn_compte_fb" value="SIGN IN WITH FACEBOOK" onclick="facebook()">
+                </div>
             </div>
         </form>
     </main>
     <footer>
     </footer>
+    <script src="assets/js/inscription.js"></script>
 </body>
 </html>
