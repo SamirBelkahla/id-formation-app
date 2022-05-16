@@ -15,6 +15,10 @@ function sendForm(e) {
     let newUser = {}
     for (let data of formData.entries()) {
         newUser[data[0]] = data[1];
+        if (data[0] === "allergies") {
+            const allergies = data[1].split(",");
+            newUser.allergies = allergies;
+        }
     }
 
     const data = localStorage.getItem("db");
@@ -24,15 +28,11 @@ function sendForm(e) {
     newUser.id = max + 1;
     jsonData.categories.demandes.push(newUser);
     localStorage.setItem("db", JSON.stringify(jsonData));
+    alert("Merci, votre demande a bien été prise en compte");
     e.preventDefault();
 }
-let validSubmit = document.getElementById("form-inscription");
-    function myFunction() {
-        if (validSubmit.checkValidity()) {
-            alert("Merci, votre demande a bien été prise en compte");
-        } else {
-            alert("Vous devez completer les champs obligatoires !")
-        }
-    }
 
+document.getElementById("logo").addEventListener("click", e => accueil())
+document.getElementById("btn_compte_google").addEventListener("click", e => google())
+document.getElementById("btn_compte_fb").addEventListener("click", e => facebook());
 document.getElementById("form-inscription").addEventListener("submit", e => sendForm(e));
