@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='assets/js/validation-inscription.js' async></script>
+    <script src='assets/js/validation-inscription.js' defer></script>
     <link rel="stylesheet" href="assets/css/validation-inscription.css">
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1920px)" href="assets/css/validation-inscription-desktop.css">
     <title>Validation inscription</title>
@@ -14,28 +14,10 @@
     </header>
     <main>
         <h1>Demandes d'inscription</h1>
-        <section>
+        <section id="section">
         <input class="recherche" onkeyup="chercher_eleve()" placeholder="Rechercher..." type="text" name="search">
-        <table class="tableau">
-            <tr>
-                <td class="nom">Lepouillu Elisabeth</td>
-                <td class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </td>
-            </tr>
-            <tr>
-                <td class="date">Date de demande :<br> 18/04/22</td>
-                <td><button class="detail" type="button">Voir la demande</button></td>
-            </tr>
-            <tr>
-                <td class="nom">Haroufane Sofia</td>
-                <td class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </td>
-            </tr>
-            <tr>
-                <td class="date">Date de demande :<br> 07/06/22</td>
-                <td><button class="detail" type="button">Voir la demande</button></td>
-            </tr>
-        </table>
+        <input class="bouton" type="button" value="Voir les demandes">
         </section>
-        <div class="demande"></div>
     </main>
 </body>
 </html>
