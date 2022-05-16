@@ -22,7 +22,7 @@ body:before {
     top: 0;
     background-image: url("../img/cantine.png");
     width: 60%;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
     opacity: 1;
     background-position: center;
@@ -33,7 +33,7 @@ body:before {
 
 main {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #f8f9fb;
 }
 
@@ -50,18 +50,18 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .titre-accueil {
-    margin: 3rem;
+    margin: 2rem;
     width: 90%;
     font-size: 30px;
 }
 
 .sous-titre-accueil {
     margin-left: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 15px;
     width: 90%;
@@ -143,8 +143,8 @@ input[type="submit"]:hover {
     width: 15rem;
     height: 2.5rem;
     padding-left: 1rem;
-    margin: 5rem 1rem;
-    margin-bottom: 15rem;
+    margin: 3rem 1rem;
+    margin-bottom: 3rem;
     cursor: pointer;
 }
 
@@ -175,8 +175,8 @@ input[type="submit"]:hover {
 
     * {
         box-sizing: border-box;
-        margin: auto;
-        padding: auto;
+        margin: 0;
+        padding: 0;
         font-size: 18px;    
     } 
 
