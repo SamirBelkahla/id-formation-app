@@ -1,4 +1,4 @@
-const db = localStorage.getItem("data");
+const db = localStorage.getItem("db");
 if (!db) {
     fetch("../../bdd.json", {
     method: 'GET',
@@ -8,7 +8,7 @@ if (!db) {
     }
 }).then(async function (response) {
     const data = await response.json();
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("db", JSON.stringify(data));
 });
 }
 
@@ -32,29 +32,23 @@ function mdp() {
     let mdpOublie = prompt("Veuillez renseigner votre adresse e-mail afin de recevoir votre nouveau mot de passe.", "E-Mail");
 }
 
+function connexion(e) {
+    e.preventDefault();
+    const data = localStorage.getItem("db");
+    const usersData = JSON.parse(data);
+    const users = usersData.categories.utilisateurs;
+    const identifiant = document.getElementById("user-identifiant").value;
+    const motDePasse = document.getElementById("user-mdp").value;
+    const currentUser = users.find(user => identifiant === user.pseudo && motDePasse === user.motdepasse);
+    if (!currentUser) {
+        return alert("Nom d'utilisateur ou mot de passe incorrecte. Veuillez réessayer.");
+    } 
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+    location.href = currentUser.role === "admin" ? "../../gestion-inscrits.html" : "../../gestion-parents.html";
+}
 
-connexion.addEventListener("click", event => {
-    function connexion (){
-        const data = localStorage.getItem("data");
-        const usersData = JSON.parse(data);
-        let userData = .categories.utilisateurs;
-        let identifiant = document.getElementById("user-identifiant").value;
-        let motDePasse = document.getElementById("user-mdp").value;
-        userData.forEach(element => {
-            event.preventDefault();
-            if ((identifiant === element.pseudo) && (motDePasse === element.motdepasse)) {
-                result = true;
-                if (element.pseudo === "admin") {
-                    location.href = "../..gestion-inscrits.html";
-                } else if (element.pseudo === "dujardin") {
-                    location.href = "gestion-parents.html";
-                } else {usersData
-                    alert("Nom d'utilisateur ou mot de passe incorrecte. Veuillez réessayer.");
-                }
-            }
-        });
-    }
-});
+document.getElementById("connexions").addEventListener("click", e => connexion(e));    
+
 
 
 

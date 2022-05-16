@@ -17,13 +17,13 @@ function sendForm(e) {
         newUser[data[0]] = data[1];
     }
 
-    const data = localStorage.getItem("data");
+    const data = localStorage.getItem("db");
     const jsonData = JSON.parse(data);
     const ids = jsonData.categories.demandes.map(object => object.id);
     const max = Math.max.apply(null, ids);
     newUser.id = max + 1;
     jsonData.categories.demandes.push(newUser);
-    localStorage.setItem("data", JSON.stringify(jsonData));
+    localStorage.setItem("db", JSON.stringify(jsonData));
     e.preventDefault();
 }
 let validSubmit = document.getElementById("form-inscription");
