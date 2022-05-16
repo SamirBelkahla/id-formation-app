@@ -26,5 +26,13 @@ function sendForm(e) {
     localStorage.setItem("data", JSON.stringify(jsonData));
     e.preventDefault();
 }
+let validSubmit = document.getElementById("form-inscription");
+    function myFunction() {
+        if (validSubmit.checkValidity()) {
+            alert("Merci, votre demande a bien été prise en compte");
+        } else {
+            alert("Vous devez completer les champs obligatoires !")
+        }
+    }
 
 document.getElementById("form-inscription").addEventListener("submit", e => sendForm(e));

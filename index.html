@@ -17,13 +17,13 @@
             <img src="assets/img/logo.png" alt="logo" >
             <h1 class="titre-accueil" onclick="validInscription()">Cantine scolaire</h1>
             <p class="sous-titre-accueil">Gérez les demandes d'inscription et de désinscription grâce à notre nouvelle application !</p>
-            <form>
+            <form id="login">
                 <div class="user_connexion">
                     <label for="user_mail">
-                        <input type="text" name="user_mail" placeholder="Adresse E-mail">
+                        <input type="text" id="user-identifiant" name="user_identifiant" placeholder="Identifiant">
                     </label>
-                    <label for="passeword">
-                        <input type="text" placeholder="Mot de passe">
+                    <label for="password">
+                        <input type="text" id="user-mdp" name="user_mdp" placeholder="Mot de passe">
                     </label>
                     <label for="btn_mdp_oublie">
                         <input type="button" id="btn_mdp_oublie" value="Mot de passe oublié?" onclick="mdp()">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="identification">
                     <label for="btn_identification">
-                        <input type="submit" id="btn_identification" value="S'identifier">
+                        <input type="submit" id="connexions" value="S'identifier" onclick="connexion()">
                     </label>
                     <span>Vous n'avez pas de compte ?</span>
                     <label for="btn_inscription">

@@ -12,7 +12,6 @@ if (!db) {
 });
 }
 
-
 function inscription() {
     window.location.href = "inscription.html";
     }
@@ -32,3 +31,32 @@ function facebook() {
 function mdp() {
     let mdpOublie = prompt("Veuillez renseigner votre adresse e-mail afin de recevoir votre nouveau mot de passe.", "E-Mail");
 }
+
+
+connexion.addEventListener("click", event => {
+    function connexion (){
+        const data = localStorage.getItem("data");
+        const usersData = JSON.parse(data);
+        let userData = .categories.utilisateurs;
+        let identifiant = document.getElementById("user-identifiant").value;
+        let motDePasse = document.getElementById("user-mdp").value;
+        userData.forEach(element => {
+            event.preventDefault();
+            if ((identifiant === element.pseudo) && (motDePasse === element.motdepasse)) {
+                result = true;
+                if (element.pseudo === "admin") {
+                    location.href = "../..gestion-inscrits.html";
+                } else if (element.pseudo === "dujardin") {
+                    location.href = "gestion-parents.html";
+                } else {usersData
+                    alert("Nom d'utilisateur ou mot de passe incorrecte. Veuillez réessayer.");
+                }
+            }
+        });
+    }
+});
+
+
+
+
+
