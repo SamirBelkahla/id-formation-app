@@ -92,6 +92,7 @@ for (const eleve in datas) {
 }
 
 // permet de remplir les colonnes du tableau
+let lesEleves;
 let i = 0;
 for (parent of tableauParents) {
   i++;
@@ -118,14 +119,14 @@ for (parent of tableauParents) {
           btn.style.borderRadius = "12px";
           btn.style.padding = "0px 5px";
           btn.style.color = "#195A5B";
-          btn.style.margin = "0px 5px";        
+          btn.style.margin = "0px 1px";        
 }
 
 
 
 // permet d'ajouter du style en mode css
-let style = document.createElement("style");
-style.innerHTML = `
+// let style = document.createElement("style");
+// style.innerHTML = `
 
-`;
-document.head.append(style);
+// `;
+// document.head.append(style);
