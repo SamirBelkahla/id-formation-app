@@ -42,18 +42,16 @@ table {
     justify-content: space-between;
 }
 
+th {
+    border: 1px solid black;
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 td {
+    border: 1px solid black;
+    height: 4rem;
+    font-size: 1.5rem;
     padding: 1px 2rem;
 }
-
-.naissance {
-    display: block;
-}
-
-.date {
-    display: block;
-}
-
-.parent {
-    display: block;
-} 
