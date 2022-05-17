@@ -119,7 +119,7 @@ for (parent of tableauParents) {
           btn.style.borderRadius = "12px";
           btn.style.padding = "0px 5px";
           btn.style.color = "#195A5B";
-          btn.style.margin = "0px 5px";        
+          btn.style.margin = "0px 1px";        
 }
 
 
