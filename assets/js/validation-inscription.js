@@ -53,6 +53,7 @@ for (let i = 0; i < allDemandes.length; i++) {
         let t = document.createTextNode("Valider");
         btn.appendChild(t);
         monTd.appendChild(btn);
+
             btn.style.cursor = "pointer";
             btn.style.backgroundColor = "transparent";
             btn.style.border = "1px solid #D4D4D4";
@@ -72,16 +73,28 @@ for (let i = 0; i < allDemandes.length; i++) {
             btn2.style.color = "red";
             default:    
         }
+          btn.style.cursor = "pointer";
+          btn.style.backgroundColor = "transparent";
+          btn.style.border = "1px solid #D4D4D4";
+          btn.style.borderRadius = "12px";
+          btn.style.padding = "0px 10px";
+          btn.style.color = "green";
+          btn.style.margin = "0px 5px";        
+        let btn2 = document.createElement("BUTTON");
+        let t2 = document.createTextNode("Refuser");
+          btn2.appendChild(t2);
+          monTd.appendChild(btn2);
+          btn2.style.cursor = "pointer";
+          btn2.style.backgroundColor = "transparent";
+          btn2.style.border = "1px solid #D4D4D4";
+          btn2.style.borderRadius = "12px";
+          btn2.style.padding = "0px 10px";
+          btn2.style.color = "red";
+      default:
+    }
     monTr.appendChild(monTd);
     }
-}
-
-
-for (let demandeData in allDemandes) {
-
-console.log(demandeData);
-}
-
+} 
 
 
 
