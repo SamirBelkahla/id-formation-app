@@ -7,7 +7,7 @@ fetch("header-parents.html") // On fait une requète pour récupérer le contenu
 });
 
 // On récupère le contenu du localStorage pour disposer des données sans à voir à utiliser à nouveau un fetch.
-const datas = JSON.parse(localStorage.getItem("datas")); 
+const datas = JSON.parse(localStorage.getItem("db")); 
 
 
 // ici on récupère que le tableau retards du localStorage
