@@ -18,11 +18,11 @@ body:before {
     content: "";
     display: block;
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 0;
     background-image: url("../img/cantine.png");
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 100vh;
     z-index: 0;
     opacity: 1;
     background-position: center;
@@ -33,12 +33,12 @@ body:before {
 
 main {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #f8f9fb;
 }
 
 .side_left {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -50,18 +50,18 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .titre-accueil {
-    margin: 3rem;
+    margin: 1rem;
     width: 90%;
     font-size: 30px;
 }
 
 .sous-titre-accueil {
     margin-left: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 15px;
     width: 90%;
@@ -108,7 +108,7 @@ input[type="submit"] {
     border-radius: 1rem;
     color: white;
     border: none;
-    margin: 3rem 0rem;
+    margin: 1rem 0rem;
     width: 50%;
     height: 2rem;
     cursor: pointer;
@@ -143,8 +143,8 @@ input[type="submit"]:hover {
     width: 15rem;
     height: 2.5rem;
     padding-left: 1rem;
-    margin: 5rem 1rem;
-    margin-bottom: 15rem;
+    margin: 1.5rem 1rem;
+    margin-bottom: 0rem;
     cursor: pointer;
 }
 
@@ -175,8 +175,8 @@ input[type="submit"]:hover {
 
     * {
         box-sizing: border-box;
-        margin: auto;
-        padding: auto;
+        margin: 0;
+        padding: 0;
         font-size: 18px;    
     } 
 
@@ -189,7 +189,7 @@ input[type="submit"]:hover {
         background-image: url("../img/cantine.png");
         width: 100%;
         align-content: center;
-        height: 100%;
+        height: 100vh;
         z-index: 1;
         opacity: 0.3;
         background-position: center;
@@ -202,7 +202,7 @@ input[type="submit"]:hover {
         position: relative;
         z-index: 1;
         width: 100%;
-        margin: 0rem;
+        margin-bottom: 0rem;
     }
 
     .titre-accueil {
@@ -218,7 +218,7 @@ input[type="submit"]:hover {
 
     .user_connexion {
         width: 100%;
-        margin: 0rem;
+        margin-left: 1rem;
     }
 
     .user_connexion label {
@@ -232,7 +232,7 @@ input[type="submit"]:hover {
         border: none;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 13rem;
+        margin-left: 12rem;
     }
 
     .identification {
@@ -245,7 +245,7 @@ input[type="submit"]:hover {
         border-radius: 1rem;
         color: white;
         border: none;
-        margin: 3rem 0rem;
+        margin: 2rem 0rem;
         width: 10rem;
         height: 2rem;
         cursor: pointer;

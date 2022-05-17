@@ -11,14 +11,14 @@
     <header>
     </header>
     <main>
-        <img src="assets/img/logo.png" alt="logo" onclick="accueil()">
+        <img src="assets/img/logo.png" alt="logo" id="logo">
         <h1 class="titre-inscription">Inscription</h1>
         <span class="sous-titre">Tout gérer depuis notre application !</span>
         <form id="form-inscription">
             <div class="coordonnees">
                 <div class="coordonnee1" >
                     <label for="last_name">
-                        <input type="text" name="nom" placeholder="Nom">
+                        <input type="text" name="nom" placeholder="Nom" required>
                     </label>
                     <label for="first_name">
                         <input type="text" name="prenom" placeholder="Prenom">
@@ -65,8 +65,8 @@
                     </label>
                 </div>
                 <div class="btn_sign_in">
-                    <input type="button" id="btn_compte_google" value="SIGN IN WITH GOOGLE" onclick="google()">
-                    <input type="button" id="btn_compte_fb" value="SIGN IN WITH FACEBOOK" onclick="facebook()">
+                    <input type="button" id="btn_compte_google" value="SIGN IN WITH GOOGLE">
+                    <input type="button" id="btn_compte_fb" value="SIGN IN WITH FACEBOOK">
                 </div>
             </div>
         </form>
