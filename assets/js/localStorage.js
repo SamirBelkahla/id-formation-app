@@ -2,7 +2,7 @@
 let datas;
 await getData();
 console.log("Voici les données : ", datas);
-
+localStorage.clear();
 localStorage.setItem("datas", JSON.stringify(datas));
 
 async function getData() {
@@ -18,3 +18,4 @@ async function getData() {
     }
   datas = await result.json();
 }
+export {datas as contenuStorage};
