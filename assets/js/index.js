@@ -43,6 +43,7 @@ function connexion(e) {
     location.href = currentUser.role === "admin" ? "../../gestion-inscrits.html" : "../../gestion-parents.html";
 }
 
+document.getElementById("btn_mdp_oublie").addEventListener("click", e => mdp());
 document.getElementById("direct-inscription").addEventListener("click", e => inscription());
 document.getElementById("btn_compte_google").addEventListener("click", e => google());
 document.getElementById("btn_compte_fb").addEventListener("click", e => facebook());
