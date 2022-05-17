@@ -1,94 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/gestion-inscrits.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1920px)" href="assets/css/gestion-inscrits-desktop.css">
-    <title>Gestion inscrits</title>
+    <script type="module" src='assets/js/gestion-inscrits.js' async></script>
+    <link href="assets/css/gestion-inscrits.css" rel="stylesheet" type="text/css" />
+    <title>Gestion parents</title>
 </head>
 <body>
-    <main>
-        <div>
-         <input class="recherche" onkeyup="chercher_eleve()" placeholder="Recherche..." type="text" name="search">
-         <button class="ajout" type="button">Ajouter un élève</button>
-         <button class="supprimer" type="button">Supprimer un élève</button>
-        </div>
-        <table>
-            <tr>
-                <th class="nom">Nom</th>
-                <th class="prenom">Prénom</th>
-                <th class="id">ID</th>
-                <th class="naissance">Date de naissance</th>
-                <th class="regime">Régime</th>
-                <th class="date">Date d'inscription</th>
-                <th class="parent">idParent</th>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Dujardin</label></td>
-                <td class="nom">Jean</td>
-                <td>1</td>
-                <td class="naissance">19/05/2009</td>
-                <td class="regime">1</td>
-                <td class="date">01/09/2021</td>
-                <td class="parent">10</td>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Dujardin</label></td>
-                <td class="nom">Pierre</td>
-                <td>2</td>
-                <td class="naissance">03/09/2007</td>
-                <td class="regime">1</td>
-                <td class="date">01/09/2020</td>
-                <td class="parent">10</td>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Gentil</label></td>
-                <td class="nom">Benoit</td>
-                <td>3</td>
-                <td class="naissance">24/03/2004</td>
-                <td class="regime">2</td>
-                <td class="date">01/09/2019</td>
-                <td class="parent">30</td>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Boudier</label></td>
-                <td class="nom">Amélie</td>
-                <td>4</td>
-                <td class="naissance">01/05/2004</td>
-                <td class="regime">1</td>
-                <td class="date">02/09/2018</td>
-                <td class="parent">40</td>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Brochart</label></td>
-                <td class="nom">Céline</td>
-                <td>5</td>
-                <td class="naissance">15/10/2000</td>
-                <td class="regime">1</td>
-                <td class="date">04/09/2014</td>
-                <td class="parent">50</td>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Pignon</label></td>
-                <td class="nom">Pierre</td>
-                <td>6</td>
-                <td class="naissance">05/08/2001</td>
-                <td class="regime">2</td>
-                <td class="date">04/09/2015</td>
-                <td class="parent">60</td>
-            </tr>
-            <tr>
-                <td><label><input type="checkbox">Ameziane</label></td>
-                <td class="nom">Selim</td>
-                <td>7</td>
-                <td class="naissance">02/02/2002</td>
-                <td class="regime">1</td>
-                <td class="date">02/09/2016</td>
-                <td class="parent">70</td>
-            </tr>
-        </table>
-    </main>
+    <header class="header"></header>
+    <div id = "output_link"></div>
 </body>
-</html>
+</html> 

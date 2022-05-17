@@ -1,6 +1,5 @@
 // On récupère le contenu du localStorage pour disposer des données sans à voir à utiliser à nouveau un fetch.
-import { contenuStorage } from "./localStorage.js";
-const datas = JSON.parse(localStorage.getItem("datas"));
+const datas = JSON.parse(localStorage.getItem("db"));
 /*console.log("ContenuStorage : ", contenuStorage);*/
 
 // Pour implémenter le template header
