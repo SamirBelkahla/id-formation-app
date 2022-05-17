@@ -4,7 +4,7 @@ const connect = JSON.parse(localStorage.getItem("currentUser"));
 console.log(connect);
 // Pour implémenter le template header
 const header = document.querySelector(".header"); // On sélectionne l'élément header de notre page index.html
-fetch("header-admin.html") // On fait une requète pour récupérer le contenu text du fichier header.html
+fetch("header-parents.html") // On fait une requète pour récupérer le contenu text du fichier header.html
 .then(res=>res.text())
 .then(data=>{
   header.innerHTML = data; // On charge le contenu de la balise header avec le text renvoyé par le fetch
