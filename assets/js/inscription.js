@@ -1,5 +1,5 @@
 function accueil() {
-    window.location.href = "index.html";
+    window.location.href = "../../index.html";
     }
 
 function google() {
@@ -32,7 +32,7 @@ function sendForm(e) {
     e.preventDefault();
 }
 
-document.getElementById("logo").addEventListener("click", e => accueil())
-document.getElementById("btn_compte_google").addEventListener("click", e => google())
+document.getElementById("logo").addEventListener("click", e => accueil());
+document.getElementById("btn_compte_google").addEventListener("click", e => google());
 document.getElementById("btn_compte_fb").addEventListener("click", e => facebook());
 document.getElementById("form-inscription").addEventListener("submit", e => sendForm(e));
