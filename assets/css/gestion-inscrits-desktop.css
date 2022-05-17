@@ -15,13 +15,6 @@ body {
     height: 35px;
 }
 
-input[type=checkbox] {
-    border-color: #D4D4D4;
-    height: 15px;
-    width: 15px;
-    margin-right: 15px;
-}
-
 table {
     display: flex;
     border-collapse: separate;
@@ -34,6 +27,6 @@ table {
 }
 
 td {
-    padding: 20px 6rem;
+    padding: 15px 6rem;
 }
 
