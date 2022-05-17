@@ -15,7 +15,7 @@ for (const demandes in datas) {
   allDemandes = datas[demandes].demandes
   // console.log("Demandes : ", allDemandes);
 }
-let tabHead = ["Nom", "Prénom", "Adresse mail", "Téléphone"]
+let tabHead = ["Nom", "Prénom", "Adresse mail", "Téléphone", ""]
 // Je déclare mes variable pour créer le tableau
 let section = document.getElementById("section");
 let table = document.createElement("table");
@@ -24,7 +24,7 @@ let tbody = document.createElement("tbody");
 table.appendChild(tbody);
 let trHead = document.createElement("tr");
 tbody.appendChild(trHead);
-for (let nbColonnes = 1; nbColonnes <= 4; nbColonnes++) {
+for (let nbColonnes = 1; nbColonnes <= 5; nbColonnes++) {
   let thHead = document.createElement("th");
   thHead.textContent = tabHead[nbColonnes-1]
   trHead.appendChild(thHead);
@@ -32,7 +32,7 @@ for (let nbColonnes = 1; nbColonnes <= 4; nbColonnes++) {
 for (let i = 0; i < allDemandes.length; i++) {
     let monTr = document.createElement("tr");
     tbody.appendChild(monTr);
-    for (let j = 1; j <= 4; j++) {
+    for (let j = 1; j <= 5; j++) {
     let monTd = document.createElement("td")
     console.log(allDemandes[i].nom);
     switch (j) {
@@ -48,11 +48,42 @@ for (let i = 0; i < allDemandes.length; i++) {
       case 4:
         monTd.textContent = allDemandes[i].telephone;
         break;
-        default:
-    }
+      case 5: 
+        let btn = document.createElement("BUTTON");
+        let t = document.createTextNode("Valider");
+        btn.appendChild(t);
+        monTd.appendChild(btn);
+            btn.style.cursor = "pointer";
+            btn.style.backgroundColor = "transparent";
+            btn.style.border = "1px solid #D4D4D4";
+            btn.style.borderRadius = "12px";
+            btn.style.padding = "0px 10px";
+            btn.style.color = "green";
+            btn.style.margin = "0px 5px";
+        let btn2 = document.createElement("BUTTON");
+        let t2 = document.createTextNode("Refuser");
+            btn2.appendChild(t2);
+            monTd.appendChild(btn2);
+            btn2.style.cursor = "pointer";
+            btn2.style.backgroundColor = "transparent";
+            btn2.style.border = "1px solid #D4D4D4";
+            btn2.style.borderRadius = "12px";
+            btn2.style.padding = "0px 10px";
+            btn2.style.color = "red";
+            default:    
+        }
     monTr.appendChild(monTd);
     }
 }
+
+
+for (let demandeData in allDemandes) {
+
+console.log(demandeData);
+}
+
+
+
 
 
 //passer de demande d'inscription à utilisateur, push

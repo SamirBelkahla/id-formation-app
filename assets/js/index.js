@@ -13,11 +13,7 @@ if (!db) {
 }
 
 function inscription() {
-    window.location.href = "inscription.html";
-    }
-
-function validInscription() {
-    window.location.href = "validation-inscription.html";
+    window.location.href = "../../inscription.html";
     }
 
 function google() {
@@ -47,6 +43,9 @@ function connexion(e) {
     location.href = currentUser.role === "admin" ? "../../gestion-inscrits.html" : "../../gestion-parents.html";
 }
 
+document.getElementById("direct-inscription").addEventListener("click", e => inscription());
+document.getElementById("btn_compte_google").addEventListener("click", e => google());
+document.getElementById("btn_compte_fb").addEventListener("click", e => facebook());
 document.getElementById("connexions").addEventListener("click", e => connexion(e));    
 
 
