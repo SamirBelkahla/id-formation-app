@@ -7,7 +7,7 @@ fetch("header-admin.html") // On fait une requète pour récupérer le contenu t
 });
 
 // On récupère le contenu du localStorage pour disposer des données sans à voir à utiliser à nouveau un fetch.
-const datas = JSON.parse(localStorage.getItem("data")); 
+const datas = JSON.parse(localStorage.getItem("db")); 
 
 // ici on ne récupère que le tableau demandes du localStorage
 
