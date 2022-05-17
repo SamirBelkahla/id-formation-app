@@ -106,8 +106,10 @@ for (parent of tableauParents) {
       table.rows[i].cells[3].textContent = table.rows[i].cells[3].textContent.concat(", " + lesEleves.prenom);
     }
   }
-  table.rows[i].cells[4].textContent = "profil";
+  table.rows[i].cells[4].textContent = "voir le profil";
   table.rows[i].cells[4].addEventListener("click", e => lien());
+  table.rows[i].cells[4].style.cursor = "pointer";
+  table.rows[i].cells[4].style.color = "green";
 }
 
 
@@ -115,22 +117,6 @@ for (parent of tableauParents) {
 // permet d'ajouter du style en mode css
 let style = document.createElement("style");
 style.innerHTML = `
-table {
-  width: 95%;
-  margin: auto;
-  margin-top: 2rem;
-  text-align: center;
-}
-th {
-  border: 1px solid black;
-  height: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-}
-td {
-  border: 1px solid black;
-  height: 4rem;
-  font-size: 1.5rem;
-}
+
 `;
 document.head.append(style);
