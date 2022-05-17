@@ -106,10 +106,20 @@ for (parent of tableauParents) {
       table.rows[i].cells[3].textContent = table.rows[i].cells[3].textContent.concat(", " + lesEleves.prenom);
     }
   }
-  table.rows[i].cells[4].textContent = "voir le profil";
   table.rows[i].cells[4].addEventListener("click", e => lien());
   table.rows[i].cells[4].style.cursor = "pointer";
   table.rows[i].cells[4].style.color = "green";
+  let btn = document.createElement("BUTTON");
+        let t = document.createTextNode("Voir le profil");
+        btn.appendChild(t);
+        table.rows[i].cells[4].appendChild(btn);
+          btn.style.cursor = "pointer";
+          btn.style.backgroundColor = "transparent";
+          btn.style.border = "1px solid #D4D4D4";
+          btn.style.borderRadius = "12px";
+          btn.style.padding = "0px 5px";
+          btn.style.color = "#195A5B";
+          btn.style.margin = "0px 5px";        
 }
 
 
