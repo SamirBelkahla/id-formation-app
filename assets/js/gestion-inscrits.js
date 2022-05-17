@@ -92,6 +92,7 @@ for (const eleve in datas) {
 }
 
 // permet de remplir les colonnes du tableau
+let lesEleves;
 let i = 0;
 for (parent of tableauParents) {
   i++;
