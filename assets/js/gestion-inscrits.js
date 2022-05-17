@@ -124,8 +124,8 @@ for (parent of tableauParents) {
 
 
 // permet d'ajouter du style en mode css
-let style = document.createElement("style");
-style.innerHTML = `
+// let style = document.createElement("style");
+// style.innerHTML = `
 
-`;
-document.head.append(style);
+// `;
+// document.head.append(style);
