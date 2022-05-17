@@ -73,16 +73,9 @@ body.append(table);
 
 
 // permet de créer un lien
-let a = document.createElement('a');  
-let lien = document.createTextNode("Voici un lien"); 
-a.appendChild(lien);  
-a.title = "Comment faire un lien en JavaScript";  
-a.href = "gestion-parents.html";
-document.body.appendChild(a);
-// idem
-/*let myURL = "gestion-parents.html"
-let myLink = '<a href="' + myURL +'">' + myURL + '</a>';
-document.getElementById("output_link").appendChild(myLink);*/
+function lien() {
+  window.location.href = "gestion-parents.html";
+}
 
 // permet de sélectionner n'importe quelle case du tableau
 console.log(table.rows);
@@ -113,8 +106,8 @@ for (parent of tableauParents) {
       table.rows[i].cells[3].textContent = table.rows[i].cells[3].textContent.concat(", " + lesEleves.prenom);
     }
   }
-  let maChaîne = "Table des matières";
-  table.rows[i].cells[4].textContent = maChaîne;
+  table.rows[i].cells[4].textContent = "profil";
+  table.rows[i].cells[4].addEventListener("click", e => lien());
 }
 
 
